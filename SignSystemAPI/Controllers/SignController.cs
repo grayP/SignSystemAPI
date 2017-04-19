@@ -11,7 +11,7 @@ using SignSystem.API.Services.Signs;
 
 namespace SignSystem.API.Controllers
 {
-    [Route("api/store")]
+    [Route("api/sign")]
     public class SignController : Controller
     {
         private ISignRepository _signRepository;

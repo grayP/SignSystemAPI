@@ -35,7 +35,7 @@ namespace SignSystem.API.Migrations
                 table: "Stores");
 
             migrationBuilder.DropColumn(
-                name: "Name",
+                name: "Model",
                 table: "Stores");
 
             migrationBuilder.DropColumn(
@@ -43,11 +43,11 @@ namespace SignSystem.API.Migrations
                 table: "Stores");
 
             migrationBuilder.DropColumn(
-                name: "Name",
+                name: "Model",
                 table: "PointsOfInterest");
 
             migrationBuilder.DropColumn(
-                name: "Name",
+                name: "Model",
                 table: "Cities");
 
             migrationBuilder.AddColumn<string>(

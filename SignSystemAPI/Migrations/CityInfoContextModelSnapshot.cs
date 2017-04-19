@@ -24,7 +24,7 @@ namespace SignSystem.API.Migrations
                     b.Property<string>("Description")
                         .HasMaxLength(200);
 
-                    b.Property<string>("Name")
+                    b.Property<string>("Model")
                         .IsRequired()
                         .HasMaxLength(50);
 
@@ -43,7 +43,7 @@ namespace SignSystem.API.Migrations
                     b.Property<string>("Description")
                         .HasMaxLength(200);
 
-                    b.Property<string>("Name")
+                    b.Property<string>("Model")
                         .IsRequired()
                         .HasMaxLength(50);
 
@@ -85,7 +85,7 @@ namespace SignSystem.API.Migrations
                     b.Property<string>("Manager")
                         .HasMaxLength(100);
 
-                    b.Property<string>("Name")
+                    b.Property<string>("Model")
                         .IsRequired()
                         .HasMaxLength(100);
 

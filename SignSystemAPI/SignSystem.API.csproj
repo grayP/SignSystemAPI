@@ -19,7 +19,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Remove="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Remove="Properties\PublishProfiles\SignSystemAPI - Web Deploy.pubxml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -49,6 +51,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Properties\PublishProfiles\" />
+    <Folder Include="Properties\PublishProfiles\" />
     <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
 
