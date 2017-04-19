@@ -1,0 +1,8 @@
+C:\projects\SignSystem\SignSystem\bin\Debug\netcoreapp1.1\SignSystem.deps.json
+C:\projects\SignSystem\SignSystem\bin\Debug\netcoreapp1.1\SignSystem.runtimeconfig.json
+C:\projects\SignSystem\SignSystem\bin\Debug\netcoreapp1.1\SignSystem.runtimeconfig.dev.json
+C:\projects\SignSystem\SignSystem\bin\Debug\netcoreapp1.1\SignSystem.dll
+C:\projects\SignSystem\SignSystem\bin\Debug\netcoreapp1.1\SignSystem.pdb
+C:\projects\SignSystem\SignSystem\obj\Debug\netcoreapp1.1\SignSystem.AssemblyInfo.cs
+C:\projects\SignSystem\SignSystem\obj\Debug\netcoreapp1.1\SignSystem.dll
+C:\projects\SignSystem\SignSystem\obj\Debug\netcoreapp1.1\SignSystem.pdb
