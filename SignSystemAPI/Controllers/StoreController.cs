@@ -44,22 +44,19 @@ namespace SignSystem.API.Controllers
         [HttpPost("{create}")]
         public IActionResult AddStore([FromBody] StoreCreateDto store)
         {
-            if(store==null)
-            { return BadRequest();}
+            if (store == null)
+            { return BadRequest(); }
             if (StoreExists(store.Name))
-            { ModelState.AddModelError("Description", "This store already exists");}
+            { ModelState.AddModelError("Description", "This store already exists"); }
             if (!ModelState.IsValid)
-            { return BadRequest();}
+            { return BadRequest(); }
 
             var storeEntity = Mapper.Map<Entities.Store>(store);
             _storeRepository.Add(storeEntity);
             if (!_storeRepository.Save())
-            { return StatusCode(500,"Problem occured adding the store");}
+            { return StatusCode(500, "Problem occured adding the store"); }
 
-        return CreatedAtRoute("GetStore", new {storeId=storeEntity.Id, Name=storeEntity.Name}, storeEntity);
-
-
-
+            return CreatedAtRoute("GetStore", new { storeId = storeEntity.Id, Name = storeEntity.Name }, storeEntity);
         }
 
         private bool StoreExists(string name)
