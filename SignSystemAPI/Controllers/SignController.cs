@@ -15,7 +15,7 @@ namespace SignSystem.API.Controllers
     public class SignController : Controller
     {
         private ISignRepository _signRepository;
-        public SignController(SignRepository signRepository)
+        public SignController(ISignRepository signRepository)
         {
             _signRepository = signRepository;
         }

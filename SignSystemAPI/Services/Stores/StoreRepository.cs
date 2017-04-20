@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using SignSystem.API.Entities;
 
@@ -12,7 +13,6 @@ namespace SignSystem.API.Services.Stores
             _context = context;
         }
 
- 
 
         public bool StoreExists(int storeId)
         {
@@ -37,6 +37,17 @@ namespace SignSystem.API.Services.Stores
         public bool Save()
         {
             return (_context.SaveChanges() >= 0);
+        }
+
+        public void Add(Store store)
+        {
+            _context.Add(store);
+        
+        }
+
+        public bool StoreExists(string storeName)
+        {
+            return _context.Store.Any(c => c.Name == storeName);
         }
     }
 }

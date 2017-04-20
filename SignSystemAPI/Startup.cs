@@ -92,6 +92,7 @@ namespace SignSystem.API
                 //cfg.CreateMap<Entities.PointOfInterest, Models.PointOfInterestForUpdateDto>();
                 cfg.CreateMap<Entities.Sign, SignDto>();
                 cfg.CreateMap<Entities.Store, Models.Stores.StoreDto>();
+                cfg.CreateMap<Models.Stores.StoreCreateDto, Entities.Store>();
             });
 
             app.UseMvc();
