@@ -17,6 +17,7 @@ namespace SignSystem.API.Models.Stores
         public string IpAddress { get; set; }
         public string SubMask { get; set; }
         public int Port { get; set; }
+        public string ProgramFile { get; set; }
         public int? SignId { get; set; }
         public Sign sign => new Sign(){Id=SignId ?? 0};
     }

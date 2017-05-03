@@ -61,7 +61,7 @@ namespace SignSystem.API.Controllers
 
         private bool StoreExists(string name)
         {
-            throw new NotImplementedException();
+            return _storeRepository.StoreExists(name);
         }
     }
 }
